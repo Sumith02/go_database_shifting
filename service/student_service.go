@@ -23,6 +23,8 @@ func (s *StudentService) ProcessAndTransferStudents(machineId string, apiClient 
 	for _, student := range students {
 		err := apiClient.SendStudentData(student)
 		if err != nil {
+			log.Println(err)
+
 			log.Printf("Error transferring student %s: %v", student.StudentName, err)
 		} else {
 			log.Printf("Successfully transferred student: %s", student.StudentName)
