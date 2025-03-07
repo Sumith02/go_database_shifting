@@ -7,7 +7,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
-const oldDBConnStr = "postgresql://postgres:vsynclabs2024@database-1.cti2kic425p8.eu-north-1.rds.amazonaws.com:5432/biometric"
+const oldDBConnStr = "postgresql://postgres:ZkRZr9W9biF2n6PTsxgR@vithsutra-testing-db1.chkeii8oa8ak.eu-north-1.rds.amazonaws.com:5432/sumith"
 
 func ConnectOldDB() (*sql.DB, error) {
 	db, err := sql.Open("postgres", oldDBConnStr)
